@@ -1,0 +1,162 @@
+<!DOCTYPE HTML>
+<html manifest="" lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <title>SGA</title>
+    <style type="text/css">
+        /**
+         * Example of an initial loading indicator.
+         * It is recommended to keep this as minimal as possible to provide instant feedback
+         * while other resources are still being loaded for the first time
+         */
+        html, body {
+            height: 100%;
+        }
+
+        #appLoadingIndicator {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-top: -10px;
+            margin-left: -50px;
+            width: 100px;
+            height: 20px;
+        }
+
+        #appLoadingIndicator > * {
+            background-color: #FFFFFF;
+            float: left;
+            height: 20px;
+            margin-left: 11px;
+            width: 20px;
+            -webkit-animation-name: appLoadingIndicator;
+            -webkit-border-radius: 13px;
+            -webkit-animation-duration: 0.8s;
+            -webkit-animation-iteration-count: infinite;
+            -webkit-animation-direction: linear;
+            opacity: 0.3
+        }
+
+        #appLoadingIndicator > :nth-child(1) {
+            -webkit-animation-delay: 0.18s;
+        }
+
+        #appLoadingIndicator > :nth-child(2) {
+            -webkit-animation-delay: 0.42s;
+        }
+
+        #appLoadingIndicator > :nth-child(3) {
+            -webkit-animation-delay: 0.54s;
+        }
+
+        @-webkit-keyframes appLoadingIndicator{
+            0% {
+                opacity: 0.3
+            }
+
+            50% {
+                opacity: 1;
+                background-color:#1985D0
+            }
+
+            100% {
+                opacity:0.3
+            }
+        }
+        /* Increase height of list item so title and narrative lines fit */
+#officersList .x-list .x-list-item .x-list-item-label
+{
+     min-height: 3.5em!important;
+}
+/* Move up the disclosure button to account for the list item height increase */
+#officersList .x-list .x-list-disclosure {
+position: absolute;
+bottom: 0.85em;
+right: 2.0em;
+background-size: contain;
+}
+#officersList .list-item-title
+{
+    float:left;
+    width:100%;
+    font-size:90%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-right:25px;
+    line-height:150%;
+}
+#officersList  .list-item-rightdetail
+{
+    float:left;
+    width:95%;
+    color:#666666;
+    font-size:80%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-right:25px;
+}
+.x-item-selected .list-item-title
+{
+    color:#ffffff;
+}
+.x-item-selected .list-item-rightdetail
+{
+    color:#ffffff;
+}
+#ConnectTabBar .x-tabbar.x-docked-top .x-tab {
+    padding: '0.4em 0.5em';
+}
+    </style>
+    <style type="text/css" media="screen">
+        .middle {
+            text-align: center;
+        }
+
+        .middle .x-html img {
+            margin-bottom: 10px;
+        }
+
+        .sga .x-html h1 {
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+
+        .sga .x-html p {
+            color: #666;
+            line-height: 1.6em;
+            margin: 10px 0px 10px 0px;
+            text-align: left;
+        }
+
+        .sga .x-html h2 {
+            color: #383838;
+            font-size: 1.0em;
+            font-weight: bold;
+            text-align: left;
+        }
+
+        .sga .x-html li {
+            font-size: 0.9em;
+        }
+
+        .blog p {
+            color: #555;
+            padding: 10px 20px 0 20px;
+            font-size: 0.9em;
+            line-height: 1.4em;
+        }
+    </style>
+    <script type="text/javascript">(function(h){function f(c,d){document.write('<meta name="'+c+'" content="'+d+'">')}if("undefined"===typeof g)var g=h.Ext={};g.blink=function(c){var d=c.js||[],c=c.css||[],b,e,a;f("viewport","width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no");f("apple-mobile-web-app-capable","yes");f("apple-touch-fullscreen","yes");for(b=0,e=c.length;b<e;b++)a=c[b],"string"!=typeof a&&(a=a.path),document.write('<link rel="stylesheet" href="'+a+'">');for(b=0,e=d.length;b<
+e;b++)a=d[b],"string"!=typeof a&&(a=a.path),document.write('<script src="'+a+'"><\/script>')}})(this);
+;Ext.blink({"id":"d14cbd10-b1c0-11e1-8a14-8bf7b0f21ec1","js":[{"path":"sdk/sencha-touch.js","type":"js"},{"path":"app.js","update":"delta","type":"js"}],"css":[{"path":"resources/css/app.css","update":"delta","type":"css"}]})</script>
+</head>
+<body>
+    <div id="appLoadingIndicator">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</body>
+</html>
