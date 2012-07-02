@@ -69,7 +69,7 @@ Ext.define('Ext.data.Validations', {
      * @property emailRe
      * @type RegExp
      */
-    emailRe: /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/,
+    emailRe: /^\s*[\w\-\+_]+(\.[\w\-\+_]+)*\@[\w\-\+_]+\.[\w\-\+_]+(\.[\w\-\+_]+)*\s*$/,
 
     /**
      * Validates that the given value is present.
@@ -82,11 +82,9 @@ Ext.define('Ext.data.Validations', {
      * @return {Boolean} True if validation passed
      */
     presence: function(config, value) {
-        if (value === undefined) {
+        if (arguments.length === 1) {
             value = config;
         }
-
-        //we need an additional check for zero here because zero is an acceptable form of present data
         return !!value || value === 0;
     },
 
@@ -137,6 +135,9 @@ Ext.define('Ext.data.Validations', {
      * @return {Boolean} True if the value passes the format validation
      */
     format: function(config, value) {
+        if (value === undefined || value === null) {
+            value = '';
+        }
         return !!(config.matcher && config.matcher.test(value));
     },
 

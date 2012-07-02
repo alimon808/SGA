@@ -1,7 +1,7 @@
 //<debug>
-Ext.Loader.setPath({
-    'Ext': 'sdk/src'
-});
+//Ext.Loader.setPath({
+//    'Ext': 'sdk/src'
+//});
 //</debug>
 
 Ext.application({

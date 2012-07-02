@@ -1,7 +1,7 @@
 Ext.define('SGA.view.Events', {
 	extend: 'Ext.TabPanel',
 	xtype: 'eventspage',
-
+        requires: ['Ext.carousel.Carousel'],
 	config: {
 		title: 'Events',
 		iconCls: 'calendar2',

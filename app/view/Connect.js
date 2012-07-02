@@ -8,34 +8,31 @@ Ext.define('SGA.view.Connect', {
     config: {
         title: 'Connect',
         iconCls: 'contract',
-        tabBar: {layout: {pack:'center'}},
-        //cls: 'middle',
+        
+        tabBar:  {id: 'ConnectTabBar',layout: {pack:'center',align:'center'}},
+        id: 'officersList',
         items: [{
             xtype: 'list',
-                    showAnimation: 'slideIn',
-        hideAnimation: 'slideOut',
-        enter: 'top',
-        exit: 'bottom',
             onItemDisclosure: true,
-            itemTpl: '<div> <b>{name}</b> <br /> {position} </div>',
-            title: 'Officers',
+            itemTpl: '<div class="list-item-title">{name} </div><div class="list-item-rightdetail"> {position} </div>',
+            title: 'Officer',
             store: 'Officers'
         },
         {
             xtype: 'list',
-            itemTpl: '<div> <b>{name}</b> <br /> {college} </div>',
-            title: 'Senators',
+            itemTpl: '<div class="list-item-title">{name} </div> <div class="list-item-rightdetail">{college} </div>',
+            title: 'Senator',
             store: 'Senators'
         },
         {
             xtype: 'list',
-            itemTpl: '<div> <b>{name}</b> <br /> {college} </div>',
-            title: 'Liaisons',
+            itemTpl: '<div class="list-item-title">{name}</div> <div class="list-item-rightdetail"> {college} </div>',
+            title: 'Liaison',
             store: 'Liaisons'
         },
         {
             xtype: 'list',
-            itemTpl: '<div> <b>{position}</b> <br /> {title} </div>',
+            itemTpl: '<div class="list-item-title">{position}</div> <div class="list-item-rightdetail"> {title} </div>',
             title: 'Vacant',
             store: 'Vacants'
         }
