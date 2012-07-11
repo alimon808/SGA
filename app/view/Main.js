@@ -18,7 +18,7 @@ Ext.define("SGA.view.Main", {
                 xtype: 'homepanel'
             },
             {
-                xtype: 'eventspage'
+                xtype: 'eventlist'
             },
             {
                 xtype: 'connectpage'

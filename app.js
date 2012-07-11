@@ -5,15 +5,16 @@
 //</debug>
 
 Ext.application({
+    controllers: ['Main'],
     name: 'SGA',
 
     requires: [
         'Ext.MessageBox'
     ],
 
-    views: ['Main', 'Home', 'Events', 'Connect', 'Links', 'Contact'],
-    models: ['Officer','Senator','Liaison','Vacant'],
-    stores: ['Officers','Senators','Liaisons','Vacants'],
+    views: ['Main', 'Home', 'EventList', 'Connect', 'Links', 'Contact'],
+    models: ['Connect','Officer','Senator','Liaison','Vacant','Event'],
+    stores: ['Connects','Officers','Senators','Liaisons','Vacants','Events'],
     icon: {
         57: 'resources/icons/Icon.png',
         72: 'resources/icons/Icon~ipad.png',
