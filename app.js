@@ -14,7 +14,7 @@ Ext.application({
 
     views: ['Main', 'Home', 'EventList', 'Connect', 'Links', 'Contact'],
     models: ['Connect','Officer','Senator','Liaison','Vacant','Event'],
-    stores: ['Connects','Officers','Senators','Liaisons','Vacants','Events'],
+    stores: ['Connects','Officers','Senators','Liaisons','Vacants','Events','PastEvents'],
     icon: {
         57: 'resources/icons/Icon.png',
         72: 'resources/icons/Icon~ipad.png',

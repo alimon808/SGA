@@ -9,8 +9,8 @@ Ext.define('SGA.view.EventList', {
     config: {
         title: 'Event',
         iconCls: 'calendar2',
+        cls: 'sga-list-events',
         layout: {type:'card',animation:'flip'},
-        //fullscreen: true,
         tabBar: {
             defaults: {
               flex:1  
@@ -21,19 +21,35 @@ Ext.define('SGA.view.EventList', {
         },
         items: [
             {
-            xtype: 'list',
-            //onItemDisclosure: true,
-            itemTpl: '<div class="list-item-title">{name}</div><div class="list-item-rightdetail"> {location} </div>',
-            title: 'Upcoming Event',
-            store: 'Events'   
+                xtype: 'list',
+                itemTpl: '<div class="list-item-title">{name}</div>'+
+                    '<div class="list-item-leftdetail"> {date} </div>'+
+                    '<div class="list-item-leftdetail">{time} </div>',
+                title: 'Upcoming Event',
+                store: 'Events',
+                grouped: true,
+                listeners: {
+                    itemtap: function(dv, ix, item, e) {
+                            // Delay the selection clear
+                            // so they get a nice blue flash for HCI's sake
+                            setTimeout(function(){dv.deselect(ix);},500);
+                    }
+                }//listeners
             },
             {
-            xtype: 'list',
-            //onItemDisclosure: true,
-            itemTpl: '<div class="list-item-title" style="float:left;">{name}</div>' + 
-                     '<div style="float:right;">{date}</div><div style="clear:both;"></div><div class="list-item-rightdetail" style="float:left;"> {location} </div><div style="float:right;">{time}</div><div style="clear:both;"></div>',
-            title: 'Past Event',
-            store: 'Events'
+                xtype: 'list',
+                itemTpl: '<div class="list-item-title">{name}</div>'+
+                    '<div class="list-item-leftdetail">{date} <br /> {time}</div>',
+                title: 'Past Event',
+                store: 'PastEvents',
+                grouped: true,
+                listeners: {
+                        itemtap: function(dv, ix, item, e) {
+                                // Delay the selection clear
+                                // so they get a nice blue flash for HCI's sake
+                                setTimeout(function(){dv.deselect(ix);},500);
+                        }
+                    }//listeners
             }
         ]
     }

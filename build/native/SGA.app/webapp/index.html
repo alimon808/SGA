@@ -63,19 +63,23 @@
                 opacity:0.3
             }
         }
-        /* Increase height of list item so title and narrative lines fit */
-#officersList .x-list .x-list-item .x-list-item-label
+/* Increase height of list item so title and narrative lines fit */
+.sga-list .x-list .x-list-item .x-list-item-label
 {
      min-height: 3.5em!important;
 }
+.sga-list-events .x-list .x-list-item .x-list-item-label 
+{
+    min-height: 4.5em!important;
+}
 /* Move up the disclosure button to account for the list item height increase */
-#officersList .x-list .x-list-disclosure {
+.sga-list .x-list .x-list-disclosure {
 position: absolute;
 bottom: 0.85em;
 right: 2.0em;
 background-size: contain;
 }
-#officersList .list-item-title
+.list-item-title
 {
     float:left;
     width:100%;
@@ -86,9 +90,20 @@ background-size: contain;
     padding-right:25px;
     line-height:150%;
 }
-#officersList  .list-item-rightdetail
+.list-item-leftdetail 
 {
     float:left;
+    width:95%;
+    color:#666666;
+    font-size:80%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-right:25px; 
+}
+.list-item-rightdetail
+{
+    float:right;
     width:95%;
     color:#666666;
     font-size:80%;

@@ -11,13 +11,10 @@ Ext.define('SGA.controller.Main', {
        }
    },
    showConnection: function(list,index,element, record){
-       console.log(this);
-       //console.log(record.get('name'));
-       //Ext.Msg.alert('Show info for ' + record.get('name'));
        this.getConnectpage().push({
           xtype: 'panel',
           title: record.get('name'),
-          //html: 'Show info for ' + record.get('name'),
+          html: 'Insert bio info here and other functionalities',
           styleHtmlContenct: true
        });
    }
