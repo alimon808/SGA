@@ -11,16 +11,20 @@ Ext.define('SGA.view.Home2', {
        layout: 'fit',
 
        items: [
-           {       layout: {
-           type: 'vbox',
-           pack: 'top'
-           //align: 'stretch'
-       },
-       defaults: {
-           xtype: 'button',
-           cls: 'middle',
-           margin: '5 20'
-       },
+           {       
+               layout: {
+                  type: 'vbox',
+                  pack: 'top'
+                  //align: 'stretch'
+               },
+               defaults: {
+                   xtype: 'button',
+                   cls: 'middle',
+                   ui: 'confirm',
+                   //icon: 'resources/icons/code3.png',
+                   //iconAlign: 'right',
+                   margin: '5 20'
+               },
               items: [
 
                        {
@@ -28,6 +32,46 @@ Ext.define('SGA.view.Home2', {
                            html: '<img style="" src="resources/images/sga_logo1.png" />'
 
                        },
+                       /*{
+                           text: 'Navigation View',
+                           handler: function(){
+                               console.log('new view');
+                               if(!view){
+                                   var view = Ext.Viewport.add({
+                                   xtype:'navigationview',
+                                   items: [
+                                       {
+                                           title: 'Navigation view',
+                                           padding: 10,
+                                           items: [
+                                               {
+                                                   xtype: 'button',
+                                                   text: 'Push another view',
+                                                   handler: function(){
+                                                       view.push({
+                                                           title: 'Second view',
+                                                           padding: 10,
+                                                           items: [
+                                                               {
+                                                                   xtype:'button',
+                                                                   title: 'Pop this view',
+                                                                   handler: function(){
+                                                                       view.pop();
+                                                                   }
+                                                               }
+                                                           ]
+                                                       });
+                                                   }
+                                               }
+                                           ]
+                                       }
+                                   ]
+                               });
+                               }
+                               view.show();
+                           }
+                               
+                       },*/
                        {
                            text: 'Mission',
                            handler: function(){
@@ -46,6 +90,7 @@ Ext.define('SGA.view.Home2', {
                                           duration: 250,
                                           easing: 'ease-out'
                                       },
+                                      padding: '0',
                                       centered: true,
                                       width: Ext.os.deviceType == 'Phone' ? 260 : 400,
                                       height: Ext.os.deviceType == 'Phone' ? 260 : 400,
@@ -103,9 +148,10 @@ Ext.define('SGA.view.Home2', {
                        {
                            text: 'Initiatives',
                            handler: function(){
-                               if(!this.overlay){
-                                   this.overlay = Ext.Viewport.add({
+                               if(!overlay){
+                                   var overlay = Ext.Viewport.add({
                                       xtype: 'initiativepanel',
+                                      id: 'initiativeid',
                                       modal: true,
                                       hideOnMaskTap: true,
                                       showAnimation: {
@@ -119,14 +165,15 @@ Ext.define('SGA.view.Home2', {
                                           easing: 'ease-out'
                                       },
                                       centered: true,
-                                      width: Ext.os.deviceType == 'Phone' ? 260 : 400,
-                                      height: Ext.os.deviceType == 'Phone' ? 260 : 400,
+                                      width: Ext.Viewport.getSize().width,
+                                      height: Ext.Viewport.getSize().height,
                                       stylehtmlContent: true,
                                       layout: 'fit',
                                       scrollable: true
+                                      
                                    });
                                }
-                               this.overlay.show();
+                               overlay.show();
                            }
                        },
                        {

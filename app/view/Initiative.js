@@ -11,7 +11,23 @@ Ext.define('SGA.view.Initiative', {
             {
                 xtype: 'titlebar',
                 docked: 'top',
-                title: 'Initiatives'
+                title: 'Initiatives',
+                items: [
+                    {
+                        xtype:'button',
+                        iconCls: 'delete',
+                        iconMask: true,
+                        align: 'right',
+                        listeners: {
+                            tap: function(){
+                                //setTimeout(Ext.getCmp('initiativeid').hide(),500);
+                                Ext.getCmp('initiativeid').hide();
+                                Ext.getCmp('initiativeid').destroy();
+                                console.log('close inititiveid');
+                            }
+                        }
+                    }
+                ]
             },
             {
                 xtype: 'list',

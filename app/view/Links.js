@@ -1,4 +1,112 @@
 Ext.define('SGA.view.Links', {
+   extend: 'Ext.Container',
+   requires: ['Ext.MessageBox'],
+   xtype: 'linkspage',
+   config: {
+       title: 'Links',
+       iconCls: 'link1',
+       scrollable: true,
+       layout: 'fit',
+       items:[
+           {
+               layout: {
+                   type: 'vbox',
+                   pack: 'top'
+               },
+               defaults: {
+                   xtype: 'button',
+                   cls: 'middle',
+                   ui: 'confirm',
+                   margin: '5 20'
+               },
+               items: [
+                   {
+                       xtype: 'panel',
+                       html: '<h1>Under Construction</h1><img src="resources/images/photos/sgaphoto16.png" />'
+                   },
+                   {
+                       text: 'Election News',
+                           handler: function(){
+                               if(!this.overlay){
+                                   this.overlay = Ext.Viewport.add({
+                                      xtype: 'panel',
+                                      modal: true,
+                                      hideOnMaskTap: true,
+                                      showAnimation: {
+                                          type: 'popIn',
+                                          duration: 250,
+                                          easing: 'ease-out'
+                                      },
+                                      hideAnimation: {
+                                          type: 'popOut',
+                                          duration: 250,
+                                          easing: 'ease-out'
+                                      },
+                                      padding: '0',
+                                      centered: true,
+                                      width: Ext.os.deviceType == 'Phone' ? 260 : 400,
+                                      height: Ext.os.deviceType == 'Phone' ? 260 : 400,
+                                      stylehtmlContent: true,
+                                      html: '<p>Election details</p>',
+                                      items: [
+                                          {
+                                              docked: 'top',
+                                              xtype: 'toolbar',
+                                              title: 'Election News'
+                                          }
+                                      ],
+                                      scrollable: true
+                                   });
+                               }
+                               this.overlay.show();
+                           }
+                   },
+                   {
+                           text: 'Illinois Election News',
+                           handler: function(){
+                               if(!this.overlay){
+                                   this.overlay = Ext.Viewport.add({
+                                      xtype: 'panel',
+                                      modal: true,
+                                      hideOnMaskTap: true,
+                                      showAnimation: {
+                                          type: 'popIn',
+                                          duration: 250,
+                                          easing: 'ease-out'
+                                      },
+                                      hideAnimation: {
+                                          type: 'popOut',
+                                          duration: 250,
+                                          easing: 'ease-out'
+                                      },
+                                      padding: '0',
+                                      centered: true,
+                                      width: Ext.os.deviceType == 'Phone' ? 260 : 400,
+                                      height: Ext.os.deviceType == 'Phone' ? 260 : 400,
+                                      stylehtmlContent: true,
+                                      html: '<p>Illinois Election news details</p>',
+                                      items: [
+                                          {
+                                              docked: 'top',
+                                              xtype: 'toolbar',
+                                              title: 'Illinois Election News'
+                                          }
+                                      ],
+                                      scrollable: true
+                                   });
+                               }
+                               this.overlay.show();
+                           }
+                   }
+               ]
+           }
+       ]
+    }
+});
+
+/*
+
+Ext.define('SGA.view.Links', {
     extend: 'Ext.TabPanel',
     xtype: 'linkspage',
 
@@ -96,3 +204,4 @@ Ext.define('SGA.view.Links', {
         ]
     }
 });
+*/
