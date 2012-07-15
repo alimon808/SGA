@@ -13,7 +13,7 @@ Ext.define('SGA.view.Connect', {
         items: [
             {
                 xtype: 'list',
-                onItemDisclosure: true,
+                //onItemDisclosure: true,
                 itemTpl: '<div class="list-item-title">{name} </div><div class="list-item-leftdetail"> {title} </div>',
                 title: 'Connect',
                 store: 'Connects',

@@ -5,7 +5,6 @@ Ext.define("SGA.view.Main", {
     config: {
         tabBarPosition: 'bottom',
         cls: 'sga',
-
         layout: {
             type: 'card',
             animation: {
@@ -14,6 +13,7 @@ Ext.define("SGA.view.Main", {
         },
 
         items: [
+            {xtype: 'home2'},
             {
                 xtype: 'homepanel'
             },

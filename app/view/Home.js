@@ -11,7 +11,7 @@ Ext.define('SGA.view.Home', {
             styleHtmlContent: true,
             scrollable: true
         },
-
+        fullscreen: true,
         items: [
             {
                 title: 'Mission',
