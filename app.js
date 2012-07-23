@@ -12,7 +12,7 @@ Ext.application({
         'Ext.MessageBox'
     ],
     viewport: {autoMaximize:true},
-    views: ['Main', 'Home', 'Home2', 'EventList', 'Connect', 'Links', 'Contact','Initiative'],
+    views: ['Main', 'Home', 'Home2', 'EventList', 'Connect', 'Links', 'Contact','Initiative','ContactForm'],
     models: ['Connect','Officer','Senator','Liaison','Vacant','Event','Initiative'],
     stores: ['Connects','Officers','Senators','Liaisons','Vacants','Events','PastEvents','Initiatives'],
     icon: {

@@ -181,7 +181,7 @@ Ext.define('SGA.view.Home2', {
                            handler: function(){
                                if(!this.overlay){
                                    this.overlay = Ext.Viewport.add({
-                                      xtype: 'panel',
+                                      xtype: 'contactform',
                                       modal: true,
                                       hideOnMaskTap: true,
                                       showAnimation: {
@@ -198,20 +198,7 @@ Ext.define('SGA.view.Home2', {
                                       width: Ext.os.deviceType == 'Phone' ? 260 : 400,
                                       height: Ext.os.deviceType == 'Phone' ? 260 : 400,
                                       stylehtmlContent: true,
-                                      html: [
-                                            '<a href="http://www.facebook.com/depaulsga" target="_blank"><img src="resources/images/fb.png" /></a>',
-                                            '<a href="http://www.twitter.com/depaulsga" target="_blank"><img src="resources/images/twitter.png" /></a>',
-                                            '<a href="https://login.depaul.edu/cas/login?service=https%3A%2F%2Forgsync.com%2Fcas%2Fdepaul-university" target="_blank"><img src="resources/images/orgsync.png" /></a>',
-                                            '<a href="https://wwww.facebook.com/depauldmat" target="_blank"><img src="resources/images/dmat.png" /></a>'
-                                            ].join("")
-                                      ,
-                                      items: [
-                                          {
-                                              docked: 'top',
-                                              xtype: 'toolbar',
-                                              title: 'Contact Us'
-                                          }
-                                      ],
+                                      
                                       scrollable: true
                                    });
                                }
