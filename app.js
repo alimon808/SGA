@@ -12,7 +12,18 @@ Ext.application({
         'Ext.MessageBox'
     ],
     viewport: {autoMaximize:true},
-    views: ['Main', 'Home', 'Home2', 'EventList', 'Connect', 'Links', 'Contact','Initiative','ContactForm'],
+    views: [
+        'Main', 
+        'Home2', 
+        'EventList', 
+        'Connect', 
+        //'Links', 
+        'Contact',
+        'Initiative',
+        'ContactForm',
+        'Election',
+        'EventDetail'
+    ],
     models: ['Connect','Officer','Senator','Liaison','Vacant','Event','Initiative'],
     stores: ['Connects','Officers','Senators','Liaisons','Vacants','Events','PastEvents','Initiatives'],
     icon: {
@@ -38,6 +49,7 @@ Ext.application({
     },
 
     onUpdated: function() {
+        console.log("update triggered");
         Ext.Msg.confirm(
             "Application Update",
             "This application has just successfully been updated to the latest version. Reload now?",

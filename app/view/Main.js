@@ -15,17 +15,25 @@ Ext.define("SGA.view.Main", {
         items: [
             {xtype: 'home2'},
             {
-                xtype: 'homepanel'
-            },
-            {
-                xtype: 'eventlist'
+                xtype: 'panel',
+                layout: 'card',
+                title: 'Event',
+                iconCls: 'calendar2',
+                id: 'eventcard',
+                items: [
+                    {
+                        xtype: 'eventlist'
+                    },
+                    {
+                        xtype: 'eventdetail'
+                    }
+                ]
+                
             },
             {
                 xtype: 'connectpage'
             },
-            {
-                xtype: 'linkspage'
-            },
+            //{xtype: 'linkspage'},
             {
                 xtype: 'contactpage'
             }

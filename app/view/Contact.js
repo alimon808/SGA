@@ -8,42 +8,21 @@ Ext.define('SGA.view.Contact', {
 	],
 
 	config: {
-		title: 'Contact',
+		title: 'Contact Us',
 		iconCls: 'user',
-		url: 'alinawaz_leo@hotmail.com',
+		url: 'contact.php',
 
         items: [
         {
-            title: 'Contact Information',
+            title: 'Send Message',
             xtype: 'panel',
         	styleHtmlContent: true,
         	scrollable: true,
         	cls: 'middle',
             items: [
-                {
-	        		html: [
-	        			'<img src="resources/images/photos/sgaphoto17.png" />',
-
-	    				'<h2>Lincoln Park</h2>',
-	    				"<p>Student Involvement Office, Ste. 201 G<br />",
-	    				"2250 N. Sheffield Avenue<br />",
-	    				"Chicago, IL 60614<br />",
-	    				"773-325-7350</p>",
-
-	    				'<h2>Loop</h2>',
-	    				"<p>DePaul Center, Rm. 110002<br />",
-	    				"1 E. Jackson Blvd<br />",
-	    				"Chicago, IL 60604<p>",
-
-	    				"<p>Have questions for your Student Government Association? ",
-	    				"Feel free to get in touch with your officers by visiting the ",
-	    				"connect page. If you arent sure where to direct your questions, ",
-	    				"or for anything else, please use the form below.</p>"
-					].join("")
-	        	},
 				{
 					xtype: 'fieldset',
-					title: 'Contact Us',
+					//title: 'Contact Us',
 					instructions: '(email is not required)',
 
 					items: [
@@ -78,7 +57,7 @@ Ext.define('SGA.view.Contact', {
 				{
 					xtype: 'button',
 					margin: 20,
-					text: 'Send',
+					text: 'Submit',
 					ui: 'confirm',
 					handler: function() {
 						this.up('contactform').submit();

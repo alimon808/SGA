@@ -1,3 +1,205 @@
+
+Ext.define('SGA.view.Home2', {
+    extend: 'Ext.Panel',
+    requires: [
+        'Ext.MessageBox',
+        'Ext.data.Store'
+    ],
+    xtype: 'home2',
+    id: 'home2id',
+    config: {
+        title: 'Home',
+        iconCls: 'home',
+        layout: 'card',
+        animation: {
+            type: 'slide',
+            direction: 'left',
+            duration: 300
+        },
+        items: [
+           
+            {
+                xtype: 'panel',
+                layout: 'vbox',
+        //defaults: { cls: 'middle'},
+            items: [
+            {
+               title:'Top',
+                html:'<img style="" src="resources/images/sga_logo1.png" />',
+                style:"background-color:#eee; color:white;",
+                flex:1,
+                cls:'middle'
+            },
+            {
+                xtype: 'list',
+                id: 'homelist',
+                itemTpl: '{title}',
+                data: [
+                   {title:'Mission'},
+                   {title:'Initiative'},
+                   {title:'Election'},
+                   {title:'Office Locations'}
+                ],
+                flex:2,
+                ui:'round',
+                onItemDisclosure: true
+        	}
+            ]
+            },
+            {
+                xtype: 'panel',
+                scrollable: true,
+                html: [
+                    '<p>The Student Government Association (SGA) is the official representative body for students attending DePaul University. As such, SGA is committed to promoting and advocating the student voice and opinion. Our mission might be best summed up in the phrase, "We are interested students working for student interests!"</p>',
+                    "<br />",
+                    "<p>We are a 35-member student organization, which includes an 11-person executive branch and 24 senators and liaisons from each of DePaul's 10 colleges. In the past, SGA has led the charge in a number of key issue areas, including fighting for financial aid for Illinois college students, securing university funding and support for campus-wide environmental initiatives and promoting institutional diversity and student wellbeing. This regularly brings us face-to-face with University administrators and state and local officials.</p>"
+                ].join(""),
+                items: [
+                    {
+                        docked: 'top',
+                        xtype: 'titlebar',
+                        title: 'SGA Mission',
+                        items: [
+                            {
+                        xtype: 'button',
+                        text: 'Back',
+                        handler: function(){
+                            Ext.getCmp('home2id').setActiveItem(0, {type: 'slide', direction: 'right',duration: '3000' });
+                        }
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                xtype:'panel',
+                layout:'fit',
+                items: [
+                    {
+                        docked: 'top',
+                        xtype: 'titlebar',
+                        title: 'SGA Initiatives',
+                        items: [
+                            {
+                        xtype: 'button',
+                        text: 'Back',
+                        handler: function(){
+                            Ext.getCmp('home2id').setActiveItem(0, {type: 'slide', direction: 'right',duration: '3000' });
+                        }
+                            }
+                        ]
+                    },
+                    {
+                xtype: 'list',
+                //id: 'initlist',
+                itemTpl: '<div> {description} </div>',
+                title: '',
+                store: 'Initiatives',
+                grouped: true,
+                ui: 'round',
+                disableSelection: true
+                    }
+                ]
+
+            },
+            {
+                xtype: 'panel',
+                layout: 'fit',
+                //scrollable: true,
+                items: [
+                    {
+                        docked: 'top',
+                        xtype: 'titlebar',
+                        title: 'SGA Election',
+                        items: [
+                            {
+                        xtype: 'button',
+                        text: 'Back',
+                        handler: function(){
+                            Ext.getCmp('home2id').setActiveItem(0, {type: 'slide', direction: 'right',duration: '3000' });
+                        }
+                            }
+                        ]
+                    },
+                    {
+                        xtype: 'electionpanel',
+                    }
+                ]
+            },
+            {
+                xtype: 'panel',
+                styleHtmlContent: true,
+                html: [
+	    				'<h2>Lincoln Park</h2>',
+	    				"<p>Student Involvement Office, Ste. 201 G<br />",
+	    				"2250 N. Sheffield Avenue<br />",
+	    				"Chicago, IL 60614<br />",
+	    				"773-325-7350</p>",
+
+	    				'<h2>Loop</h2>',
+	    				"<p>DePaul Center, Rm. 110002<br />",
+	    				"1 E. Jackson Blvd<br />",
+	    				"Chicago, IL 60604<p>"
+					].join(""),
+                items: [
+                    {
+                        docked: 'top',
+                        xtype: 'titlebar',
+                        title: 'SGA Office Locations',
+                        items: [
+                            {
+                        xtype: 'button',
+                        text: 'Back',
+                        handler: function(){
+                            Ext.getCmp('home2id').setActiveItem(0, {type: 'slide', direction: 'right',duration: '3000' });
+                        }
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+   }
+});
+
+/*
+Ext.define('SGA.view.Home2', {
+    extend: 'Ext.Panel',
+    requires: ['Ext.MessageBox'],
+    xtype: 'home2',
+    
+    config: {
+        title: 'Home',
+        iconCls: 'home',
+        layout: 'vbox',
+        //defaults: { cls: 'middle'},
+            items: [
+            {
+               title:'Top',
+                html:'<img style="" src="resources/images/sga_logo1.png" />',
+                style:"background-color:#eee; color:white;",
+                flex:1,
+                cls:'middle'
+            },
+            {
+                xtype: 'list',
+                itemTpl: '{title}',
+                data: [
+                   {title:'Mission'},
+                   {title:'Initiative'},
+                   {title:'Committee'},
+                   {title:'Office Locations'}
+                ],
+                flex:2,
+                ui:'round',
+                onItemDisclosure: true
+        	}
+            ]
+   }
+});
+*/
+/*
+// with buttons
 Ext.define('SGA.view.Home2', {
    extend: 'Ext.Container',
    requires: ['Ext.MessageBox'],
@@ -20,7 +222,7 @@ Ext.define('SGA.view.Home2', {
                defaults: {
                    xtype: 'button',
                    cls: 'middle',
-                   ui: 'confirm',
+                   //ui: 'confirm',
                    //icon: 'resources/icons/code3.png',
                    //iconAlign: 'right',
                    margin: '5 20'
@@ -32,7 +234,7 @@ Ext.define('SGA.view.Home2', {
                            html: '<img style="" src="resources/images/sga_logo1.png" />'
 
                        },
-                       /*{
+                       {
                            text: 'Navigation View',
                            handler: function(){
                                console.log('new view');
@@ -71,7 +273,7 @@ Ext.define('SGA.view.Home2', {
                                view.show();
                            }
                                
-                       },*/
+                       },
                        {
                            text: 'Mission',
                            handler: function(){
@@ -211,4 +413,6 @@ Ext.define('SGA.view.Home2', {
        
    }
 });
+
+*/
 

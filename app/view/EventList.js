@@ -3,8 +3,7 @@ Ext.define('SGA.view.EventList', {
     xtype: 'eventlist',
     requires: [
         'Ext.dataview.List',
-        'Ext.data.Store',
-        'Ext.carousel.Carousel'
+        'Ext.data.Store'
     ],
     config: {
         title: 'Event',
@@ -22,31 +21,32 @@ Ext.define('SGA.view.EventList', {
         items: [
             {
                 xtype: 'list',
+                ui: 'round',
+                cls: 'sga-list',
                 itemTpl: '<div class="list-item-title">{name}</div>'+
                     '<div class="list-item-leftdetail"> {date} </div>'+
                     '<div class="list-item-leftdetail">{time} </div>',
                 title: 'Upcoming Event',
                 store: 'Events',
                 grouped: true,
+                onItemDisclosure: true,
                 listeners: {
                     itemtap: function(dv, ix, item, e) {
-                            // Delay the selection clear
-                            // so they get a nice blue flash for HCI's sake
                             setTimeout(function(){dv.deselect(ix);},500);
                     }
                 }//listeners
             },
             {
                 xtype: 'list',
+                ui: 'round',
                 itemTpl: '<div class="list-item-title">{name}</div>'+
                     '<div class="list-item-leftdetail">{date} <br /> {time}</div>',
                 title: 'Past Event',
                 store: 'PastEvents',
                 grouped: true,
+                onItemDisclosure: true,
                 listeners: {
                         itemtap: function(dv, ix, item, e) {
-                                // Delay the selection clear
-                                // so they get a nice blue flash for HCI's sake
                                 setTimeout(function(){dv.deselect(ix);},500);
                         }
                     }//listeners
