@@ -1,4 +1,3 @@
-
 Ext.define('SGA.view.Home2', {
     extend: 'Ext.Panel',
     requires: [
@@ -36,8 +35,8 @@ Ext.define('SGA.view.Home2', {
                 itemTpl: '{title}',
                 data: [
                    {title:'Mission'},
-                   {title:'Initiative'},
-                   {title:'Election'},
+                   {title:'Initiatives'},
+                   {title:'SGA Elections'},
                    {title:'Office Locations'}
                 ],
                 flex:2,
@@ -49,9 +48,9 @@ Ext.define('SGA.view.Home2', {
             {
                 xtype: 'panel',
                 scrollable: true,
+                styleHtmlContent: true,
                 html: [
                     '<p>The Student Government Association (SGA) is the official representative body for students attending DePaul University. As such, SGA is committed to promoting and advocating the student voice and opinion. Our mission might be best summed up in the phrase, "We are interested students working for student interests!"</p>',
-                    "<br />",
                     "<p>We are a 35-member student organization, which includes an 11-person executive branch and 24 senators and liaisons from each of DePaul's 10 colleges. In the past, SGA has led the charge in a number of key issue areas, including fighting for financial aid for Illinois college students, securing university funding and support for campus-wide environmental initiatives and promoting institutional diversity and student wellbeing. This regularly brings us face-to-face with University administrators and state and local officials.</p>"
                 ].join(""),
                 items: [
