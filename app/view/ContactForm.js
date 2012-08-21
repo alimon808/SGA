@@ -7,7 +7,7 @@ Ext.define('SGA.view.ContactForm',{
     ],
     config: {
         title: 'Contact Us',
-        iconCls: 'user',
+        iconCls: 'mail',
         url: 'contact.php',
         //standardSubmit: true,
         items: [
