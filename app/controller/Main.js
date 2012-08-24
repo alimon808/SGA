@@ -9,9 +9,9 @@ Ext.define('SGA.controller.Main', {
            rsvpForm: '#rsvpform'
        },
        control: {
-           'connectpage list': {
-               itemtap: 'showConnection'
-           },
+           //'connectpage list': {
+           //    itemtap: 'showConnection'
+           //},
            'home2 list[id=homelist]': {
                itemtap: 'showHomeDetail'
            },
@@ -36,10 +36,9 @@ Ext.define('SGA.controller.Main', {
        });
    },
    showHomeDetail: function(list,index,element,record) {
+       setTimeout(function(){list.deselect(index);},100);
        if (index==0) {
           Ext.getCmp('home2id').animateActiveItem(1, {type: 'slide', direction: 'left' });
-          //Ext.Msg.alert("you have tapped Missions");
-          
        }else if (index==1) {
           //Ext.Msg.alert("you have tapped Initiatives");
           Ext.getCmp('home2id').animateActiveItem(2, {type: 'slide', direction: 'left' });
@@ -49,11 +48,12 @@ Ext.define('SGA.controller.Main', {
        }else if (index == 3) {
           //Ext.Msg.alert("you have tapped office locations");
           Ext.getCmp('home2id').animateActiveItem(4, {type: 'slide', direction: 'left' });
+       } else if (index == 4) {
+          Ext.getCmp('home2id').animateActiveItem(5, {type: 'slide', direction: 'left' });
        }
    },
    backHome: function(){
        Ext.getCmp('home2id').animateActiveItem(0, {type: 'slide', direction: 'right'});
-       //element.getParent().setActiveItem(0);
    },
    showEvent: function(list,index,element,record){
        console.log('event list tapped...');

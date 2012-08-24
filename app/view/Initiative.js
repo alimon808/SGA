@@ -6,11 +6,11 @@ Ext.define('SGA.view.Initiative', {
     ],
     config: {
 
-        cls: 'sga-list-events',
+        //cls: 'sga-list-events',
         items: [
             {
                 xtype: 'list',
-                itemTpl: '<div class="list-item-leftdetail"> {description} </div>',
+                itemTpl: '<div class="list-item-leftdetail" style="font-size: 60%;"> {description} </div>',
                 title: 'Upcoming Event',
                 store: 'Initiatives',
                 grouped: true,

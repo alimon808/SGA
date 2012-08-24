@@ -8,8 +8,7 @@ Ext.define('SGA.view.ContactForm',{
     config: {
         title: 'Contact Us',
         iconCls: 'user',
-        url: 'contact.php',
-        //standardSubmit: true,
+        url: 'contact.php?f=1',
         items: [
             {
                 xtype: 'titlebar',
@@ -46,7 +45,7 @@ Ext.define('SGA.view.ContactForm',{
                 handler: function(){
                     this.up('contactform').submit({
                         success: function(){
-                            alert('form submitted successfully.');
+                            alert('Message submitted successfully.');
                         }
                     });
                 }

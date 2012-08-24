@@ -17,15 +17,32 @@ Ext.application({
         'Home2', 
         'EventList', 
         'Connect', 
-        //'Links', 
         'Contact',
         'Initiative',
         'ContactForm',
         'Election',
-        'EventDetail'
+        'EventDetail',
+        'SuggestionForm'
     ],
-    models: ['Connect','Officer','Senator','Liaison','Vacant','Event','Initiative'],
-    stores: ['Connects','Officers','Senators','Liaisons','Vacants','Events','PastEvents','Initiatives'],
+    models: [
+        'Connect',
+        'Officer',
+        'Senator',
+        'Liaison',
+        'Vacant',
+        'Event',
+        'Initiative'
+    ],
+    stores: [
+        'Connects',
+        'Officers',
+        'Senators',
+        'Liaisons',
+        'Vacants',
+        'Events',
+        'PastEvents',
+        'Initiatives'
+    ],
     icon: {
         57: 'resources/icons/Icon.png',
         72: 'resources/icons/Icon~ipad.png',

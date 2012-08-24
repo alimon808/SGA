@@ -17,36 +17,36 @@ Ext.define('SGA.view.Home2', {
             duration: 300
         },
         items: [
-           
-            {
+           {
                 xtype: 'panel',
                 layout: 'vbox',
-        //defaults: { cls: 'middle'},
             items: [
-            {
-               title:'Top',
-                html:'<img style="" src="resources/images/sga_logo1.png" />',
-                style:"background-color:#eee; color:white;",
-                flex:1,
-                cls:'middle'
-            },
-            {
-                xtype: 'list',
-                id: 'homelist',
-                itemTpl: '{title}',
-                data: [
-                   {title:'Mission'},
-                   {title:'Initiative'},
-                   {title:'Election'},
-                   {title:'Office Locations'}
-                ],
-                flex:2,
-                ui:'round',
-                onItemDisclosure: true
-        	}
+                {
+                    title:'Top',
+                    html:'<img style="" src="resources/images/sga_logo1.png" />',
+                    style:"background-color:#fff; color:white;",
+                    flex:1,
+                    height:'130px',
+                    cls:'middle'
+                },
+                {
+                    xtype: 'list',
+                    id: 'homelist',
+                    itemTpl: '{title}',
+                    data: [
+                        {title:'Mission'},
+                        {title:'Initiatives'},
+                        {title:'SGA Election'},
+                        {title:'Office Locations'},
+                        {title: 'Suggestion Box'}
+                    ],
+                    flex:2,
+                    ui:'round',
+                    onItemDisclosure: true
+                }
             ]
-            },
-            {
+          },
+          {
                 xtype: 'panel',
                 scrollable: true,
                 html: [
@@ -91,8 +91,7 @@ Ext.define('SGA.view.Home2', {
                     },
                     {
                 xtype: 'list',
-                //id: 'initlist',
-                itemTpl: '<div> {description} </div>',
+                itemTpl: '<div style="font-size:80%;"> {description} </div>',
                 title: '',
                 store: 'Initiatives',
                 grouped: true,
@@ -122,7 +121,7 @@ Ext.define('SGA.view.Home2', {
                         ]
                     },
                     {
-                        xtype: 'electionpanel',
+                        xtype: 'electionpanel'
                     }
                 ]
             },
@@ -155,6 +154,56 @@ Ext.define('SGA.view.Home2', {
                         }
                             }
                         ]
+                    }
+                ]
+            },
+            {
+                xtype:'suggestionform'
+            },
+            {
+                xtype: 'panel',
+                styleHtmlContent: true,
+                items: [
+                    {
+                        docked: 'top',
+                        xtype: 'titlebar',
+                        title: 'Suggestion',
+                        items: [
+                            {
+                                xtype: 'button',
+                                text: 'Back',
+                                handler: function(){
+                                    Ext.getCmp('home2id').setActiveItem(0, {type: 'slide', direction: 'right',duration: '3000' });
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        xtype: 'fieldset',
+                        items: [
+                            {
+                                xtype: 'textfield',
+                                name: 'subject',
+                                label: 'Subject'
+                            },
+                            {
+                                xtype: 'textareafield',
+                                name: 'message',
+                                label: 'Message'
+                            }
+                        ]
+                    },
+                    {
+                        xtype: 'button',
+                        text: 'Submit',
+                        ui: 'confirm',
+                        handler: function(){
+                            this.up('suggestionform').submit({
+                                success: function(){
+                                    alert('Suggestion submitted successfully.');
+                                }
+                            });
+                        }
                     }
                 ]
             }

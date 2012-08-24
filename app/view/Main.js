@@ -33,7 +33,6 @@ Ext.define("SGA.view.Main", {
             {
                 xtype: 'connectpage'
             },
-            //{xtype: 'linkspage'},
             {
                 xtype: 'contactpage'
             }

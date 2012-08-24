@@ -33,3 +33,42 @@ $tabs-dark-active-color: #FF9900;
 @include pictos-iconmask('user_list');
 
 // Your custom code goes here...
+#officerList {
+  .x-list:after {
+    position: absolute;
+    left: 0;
+    right: 0;
+    display:block;
+    margin-top: 20px;
+    content: "Data provided by DMAT";
+    font-weight: bold;
+    text-align: center;
+    color: #aaa;
+    font-size: 0.8em;
+    text-shadow: rgba(255,255,255,.2) 0 1px 0;
+  }
+}
+
+.officer-list-item {
+  padding: 7px 10px;
+
+  font-weight: bold;
+  @include bevel-text('light');
+  @include ellipsis;
+
+  &.x-view-selected {
+    background: #315d94 none !important;
+    color: lighten(#315d94, 50%) !important;
+  }
+}
+
+.officer-pic {
+  display: inline-block;
+  vertical-align: -17px;
+  width: 40px;
+  height: 40px;
+  margin-right: 15px;
+  background-position: center center;
+  -webkit-border-radius: 5px;
+  -webkit-box-shadow: #ccc 0 1px 2px;
+}
