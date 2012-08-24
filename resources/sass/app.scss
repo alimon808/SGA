@@ -1,14 +1,15 @@
 $base-color: #006699;
 //$active-color: #FF9900;
 $base-gradient: 'glossy';
-$font-family: cambria;
+$font-family: georgia;
 $page-bg-color: #FFFFFF;
 $list-header-bg-color:#FFFFFF;
-$list-bg-color: #ffffff;
+$list-bg-color: #FFFFFF;
+$list-disclosure-color: red;
 
-$tabs-dark: darken(desaturate($base-color, 10%), 5%);
-//$tabs-dark-active-color: $active-color;
+$tabs-dark: darken($base-color, 10%);
 $tabs-dark-active-color: #FF9900;
+
 @import 'sencha-touch/default/all';
 
 // You may remove any of the following modules that you
@@ -30,7 +31,7 @@ $tabs-dark-active-color: #FF9900;
 @include pictos-iconmask('calendar2');
 @include pictos-iconmask('contract');
 @include pictos-iconmask('link1');
-@include pictos-iconmask('user_list');
+@include pictos-iconmask('mail');
 
 // Your custom code goes here...
 #officerList {

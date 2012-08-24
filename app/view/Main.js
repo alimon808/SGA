@@ -17,7 +17,7 @@ Ext.define("SGA.view.Main", {
             {
                 xtype: 'panel',
                 layout: 'card',
-                title: 'Event',
+                title: 'Events',
                 iconCls: 'calendar2',
                 id: 'eventcard',
                 items: [

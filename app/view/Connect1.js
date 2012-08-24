@@ -6,7 +6,7 @@ Ext.define('SGA.view.Connect', {
         'Ext.data.Store'
     ],
     config: {
-        title: 'Connect',
+        title: 'Officers',
         iconCls: 'contract',
         
         tabBar:  {id: 'ConnectTabBar',layout: {pack:'center',align:'center'}},
