@@ -39,7 +39,8 @@ Ext.define('SGA.view.EventDetail', {
            {
                xtype: 'fieldset',
                defaults: {
-                   readOnly: true
+                   readOnly: true,
+                   cls: 'middle'
                },
                items: [
                    {

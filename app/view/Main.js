@@ -34,7 +34,8 @@ Ext.define("SGA.view.Main", {
                 xtype: 'connectpage'
             },
             {
-                xtype: 'contactpage'
+                //xtype: 'contactpage'
+                xtype: 'contactform'
             }
         ]
     }

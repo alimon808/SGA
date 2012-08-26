@@ -1,11 +1,11 @@
 $base-color: #006699;
 //$active-color: #FF9900;
 $base-gradient: 'glossy';
-$font-family: georgia;
+$font-family: Georgia;
 $page-bg-color: #FFFFFF;
 $list-header-bg-color:#FFFFFF;
 $list-bg-color: #FFFFFF;
-$list-disclosure-color: red;
+$list-disclosure-color: #C11110;
 
 $tabs-dark: darken($base-color, 10%);
 $tabs-dark-active-color: #FF9900;
@@ -72,4 +72,18 @@ $tabs-dark-active-color: #FF9900;
   background-position: center center;
   -webkit-border-radius: 5px;
   -webkit-box-shadow: #ccc 0 1px 2px;
+}
+
+.x-list-disclosure {
+    background-image: -webkit-linear-gradient(top, #E81415,#C11110 50%,#C11110 51%,#C11110) !important;
+}
+
+#rsvpform {
+    font-size: 75% !important;
+}
+#suggestionForm {
+    font-size: 75% !important;
+}
+#contactForm {
+    font-size: 75% !important;
 }

@@ -10,7 +10,7 @@ Ext.define('SGA.view.Contact', {
 	config: {
 		title: 'Contact Us',
 		iconCls: 'mail',
-		url: 'contact.php',
+		url: 'contact.php?f=1',
 
         items: [
         {
@@ -22,20 +22,15 @@ Ext.define('SGA.view.Contact', {
             items: [
             	{
 					html: [
-						'<h1>DePaul Links</h1>',
-						"<p><center>",
-						'<a href="www.depaul.edu">DePaul Website</a><br />',
-						'<a href="events.depaul.edu">Events at DePaul</a>',
-						"</p></center>",
-						"<p>Have questions for your Student Government Association? Feel free to get in touch with your officers by visiting the officer tab. If you arent sure where to direct your questions, or for anything else, please use the form below. Or email us at ",
-						'<a href="sga@depaul.edu">sga@depaul.edu</a>',
+						"<p>Have questions for your Student Government Association? Feel free to get in touch with your officers by visiting the officer tab. If you arent sure where to direct your questions, or for anything else, please use the form below or email us at ",
+						'<a href="mailto:sga@depaul.edu">sga@depaul.edu</a>',
 						"</p>"
 					].join("")
 				},
 				{
 					xtype: 'fieldset',
 					//title: 'Contact Us',
-					instructions: '(email is not required)',
+					//instructions: '(email is not required)',
 
 					items: [
 						{
@@ -82,6 +77,15 @@ Ext.define('SGA.view.Contact', {
 	                    '<a href="http://www.twitter.com/depaulsga" target="_blank"><img src="resources/images/twitter.png" /></a>',
 	                    '<a href="https://login.depaul.edu/cas/login?service=https%3A%2F%2Forgsync.com%2Fcas%2Fdepaul-university" target="_blank"><img src="resources/images/orgsync.png" /></a>',
 	                    '<a href="https://wwww.facebook.com/depauldmat" target="_blank"><img src="resources/images/dmat.png" /></a>'
+					].join("")
+				},
+            	{
+					html: [
+						'<h1>DePaul Links</h1>',
+						"<p><center>",
+						'<a href="http://www.depaul.edu">DePaul Website</a><br />',
+						'<a href="http://www.events.depaul.edu">Events at DePaul</a>',
+						"</p></center>"
 					].join("")
 				}
             ]

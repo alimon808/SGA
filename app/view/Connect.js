@@ -13,13 +13,11 @@ Ext.define('SGA.view.Connect', {
         items: [
             {
                 xtype: 'list',
-                //itemTpl: '<div class="avatar" style="background-image: url("resources/icons/icon.png");"></div><div class="list-item-title">{name} </div><div class="list-item-leftdetail"> {title} </div>',
-                //itemTpl: '<div class="list-item-title">{name} </div><div class="list-item-leftdetail"> {title} </div>',
                 itemTpl: [
                     '<div class="officer-pic" style="float:left;background-image: url(resources/images/{pic});"></div>',
-                    '<div style="float:left;">',
+                    '<div style="float:left; width: 75%;">',
                     '<div class="list-item-title">{name} </div>',
-                    '<div class="list-item-leftdetail"> {title}</div>',
+                    '<div class="list-item-leftdetail""> {title}</div>',
                     '</div>',
                     '<div style="clear:both;"></div>',
                 ],
