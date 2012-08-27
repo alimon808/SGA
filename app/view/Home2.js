@@ -35,7 +35,7 @@ Ext.define('SGA.view.Home2', {
                     data: [
                         {title:'Mission'},
                         {title:'Initiatives'},
-                        {title:'SGA Election'},
+                        {title:'SGA Elections'},
                         {title:'Office Locations'},
                         {title: 'Suggestion Box'}
                     ],
