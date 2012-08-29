@@ -11,6 +11,8 @@ Ext.define('SGA.view.ContactForm',{
         cls: 'middle',
         url: 'contact.php?f=1',
         id: 'contactForm',
+        styleHtmlContent: true,
+
         items: [
             {
                 xtype: 'titlebar',
@@ -54,9 +56,7 @@ Ext.define('SGA.view.ContactForm',{
                             name: 'message',
                             label: 'Message'
                     }
-
-            ]			
-
+                ]			
             },
             {
                 xtype: 'button',
@@ -75,20 +75,17 @@ Ext.define('SGA.view.ContactForm',{
             },
             {
                 html: [
-                    '<h1>Get Involved!</h1>',
+                    '<br /><h1>Get Involved!</h1>',
                     '<a href="http://www.facebook.com/depaulsga" target="_blank"><img src="resources/images/fb.png" /></a>',
                     '<a href="http://www.twitter.com/depaulsga" target="_blank"><img src="resources/images/twitter.png" /></a>',
                     '<a href="https://login.depaul.edu/cas/login?service=https%3A%2F%2Forgsync.com%2Fcas%2Fdepaul-university" target="_blank"><img src="resources/images/orgsync.png" /></a>',
-                    '<a href="https://wwww.facebook.com/depauldmat" target="_blank"><img src="resources/images/dmat.png" /></a>'
-                ].join("")
-            },
-            {
-                html: [
-                        '<h1>DePaul Links</h1>',
-                        "<p><center>",
-                        '<a href="http://www.depaul.edu">DePaul Website</a><br />',
-                        '<a href="http://www.events.depaul.edu">Depaul Events</a>',
-                        "</p></center>"
+                    '<a href="https://wwww.facebook.com/depauldmat" target="_blank"><img src="resources/images/dmat.png" /></a>',
+
+                    '<h1>DePaul Links</h1>',
+                    "<center>",
+                    '<a href="http://www.depaul.edu">DePaul Website</a><br />',
+                    '<a href="http://www.events.depaul.edu">Depaul Events</a>',
+                    "</center>"
                 ].join("")
             }
         ]

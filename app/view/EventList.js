@@ -26,7 +26,7 @@ Ext.define('SGA.view.EventList', {
                 itemTpl: '<div class="list-item-title">{name}</div>'+
                     '<div class="list-item-leftdetail"> {date} </div>'+
                     '<div class="list-item-leftdetail">{time} </div>',
-                title: 'Upcoming Event',
+                title: 'Upcoming Events',
                 store: 'Events',
                 grouped: true,
                 onItemDisclosure: true,
@@ -41,7 +41,7 @@ Ext.define('SGA.view.EventList', {
                 ui: 'round',
                 itemTpl: '<div class="list-item-title">{name}</div>'+
                     '<div class="list-item-leftdetail">{date} <br /> {time}</div>',
-                title: 'Past Event',
+                title: 'Past Events',
                 store: 'PastEvents',
                 grouped: true,
                 onItemDisclosure: true,

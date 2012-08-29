@@ -72,7 +72,7 @@ Ext.define('SGA.view.Contact', {
 				},
 				{
 					html: [
-						'<h1>Get Involved!</h1>',
+						'<br /><br /><h1>Get Involved!</h1>',
 						'<a href="http://www.facebook.com/depaulsga" target="_blank"><img src="resources/images/fb.png" /></a>',
 	                    '<a href="http://www.twitter.com/depaulsga" target="_blank"><img src="resources/images/twitter.png" /></a>',
 	                    '<a href="https://login.depaul.edu/cas/login?service=https%3A%2F%2Forgsync.com%2Fcas%2Fdepaul-university" target="_blank"><img src="resources/images/orgsync.png" /></a>',

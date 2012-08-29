@@ -50,6 +50,7 @@ Ext.define('SGA.view.Home2', {
                 scrollable: true,
                 styleHtmlContent: true,
                 html: [
+                    '<center><img src="resources/images/photos/sgaphoto.png" /></center>',
                     '<p>The Student Government Association (SGA) is the official representative body for students attending DePaul University. As such, SGA is committed to promoting and advocating the student voice and opinion. Our mission might be best summed up in the phrase, "We are interested students working for student interests!"</p>',
                     "<p>We are a 35-member student organization, which includes an 11-person executive branch and 24 senators and liaisons from each of DePaul's 10 colleges. In the past, SGA has led the charge in a number of key issue areas, including fighting for financial aid for Illinois college students, securing university funding and support for campus-wide environmental initiatives and promoting institutional diversity and student wellbeing. This regularly brings us face-to-face with University administrators and state and local officials.</p>"
                 ].join(""),
@@ -127,7 +128,9 @@ Ext.define('SGA.view.Home2', {
             {
                 xtype: 'panel',
                 styleHtmlContent: true,
+                scrollable: true,
                 html: [
+                        '<center><img src="resources/images/photos/sgaphoto16.png" /></center>',
 	    				'<h2>Lincoln Park</h2>',
 	    				"<p>Student Involvement Office, Ste. 201 G<br />",
 	    				"2250 N. Sheffield Avenue<br />",

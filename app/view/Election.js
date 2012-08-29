@@ -7,6 +7,7 @@ Ext.define('SGA.view.Election',{
        layout: 'fit',
        scrollable: true,
        html: [
+           '<center><img src="resources/images/photos/sgaphoto17.png" /></center>',
            "<h2 style='font-size:1.4em'>Fall 2012</h2>",
            "<ul style='font-size:1.4em'>",
            "<li>September 5",
