@@ -84,7 +84,7 @@ Ext.define('SGA.view.Contact', {
 						'<h1>DePaul Links</h1>',
 						"<p><center>",
 						'<a href="http://www.depaul.edu">DePaul Website</a><br />',
-						'<a href="http://www.events.depaul.edu">Events at DePaul</a>',
+						'<a href="http://events.depaul.edu">Events at DePaul</a>',
 						"</p></center>"
 					].join("")
 				}

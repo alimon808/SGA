@@ -21,7 +21,7 @@ Ext.define('SGA.view.Election',{
            "</li>",
            "<li>October 1",
            "<ul><li>12:01am: Election begins @ ",
-           '<a href="sga.depaul.edu">sga.depaul.edu</a>',
+           '<a href="http://sga.depaul.edu">sga.depaul.edu</a>',
            "</li><li>11am-4pm: Polling stations open @ LPSC Atrium, DePaul Center 11th floor</li></ul>",
            "</li>",
            "<li>October 2",
