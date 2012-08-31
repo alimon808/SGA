@@ -7,7 +7,7 @@ Ext.define('SGA.view.Election',{
        layout: 'fit',
        scrollable: true,
        html: [
-           '<center><img src="resources/images/photos/sgaphoto17.png" /></center>',
+           '<center><img src="resources/images/photos/sgaphoto16.png" /></center>',
            "<h2 style='font-size:1.4em'>Fall 2012</h2>",
            "<ul style='font-size:1.4em'>",
            "<li>September 5",
@@ -21,7 +21,7 @@ Ext.define('SGA.view.Election',{
            "</li>",
            "<li>October 1",
            "<ul><li>12:01am: Election begins @ ",
-           '<a href="http://sga.depaul.edu">sga.depaul.edu</a>',
+           '<a href="http://sga.depaul.edu" target="_blank">sga.depaul.edu</a>',
            "</li><li>11am-4pm: Polling stations open @ LPSC Atrium, DePaul Center 11th floor</li></ul>",
            "</li>",
            "<li>October 2",

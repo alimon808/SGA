@@ -7,7 +7,7 @@ Ext.define('SGA.view.ContactForm',{
     ],
     config: {
         title: 'Contact Us',
-        iconCls: 'mail',
+        iconCls: 'mail5',
         cls: 'middle',
         url: 'contact.php?f=1',
         id: 'contactForm',
@@ -79,13 +79,7 @@ Ext.define('SGA.view.ContactForm',{
                     '<a href="http://www.facebook.com/depaulsga" target="_blank"><img src="resources/images/fb.png" /></a>',
                     '<a href="http://www.twitter.com/depaulsga" target="_blank"><img src="resources/images/twitter.png" /></a>',
                     '<a href="https://login.depaul.edu/cas/login?service=https%3A%2F%2Forgsync.com%2Fcas%2Fdepaul-university" target="_blank"><img src="resources/images/orgsync.png" /></a>',
-                    '<a href="https://wwww.facebook.com/depauldmat" target="_blank"><img src="resources/images/dmat.png" /></a>',
-
-                    '<h1>DePaul Links</h1>',
-                    "<center>",
-                    '<a href="http://www.depaul.edu">DePaul Website</a><br />',
-                    '<a href="http://events.depaul.edu">Depaul Events</a>',
-                    "</center>"
+                    '<a href="https://wwww.facebook.com/depauldmat" target="_blank"><img src="resources/images/dmat.png" /></a>'
                 ].join("")
             }
         ]

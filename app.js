@@ -22,7 +22,8 @@ Ext.application({
         'ContactForm',
         'Election',
         'EventDetail',
-        'SuggestionForm'
+        'SuggestionForm',
+        'Links'
     ],
     models: [
         'Connect',

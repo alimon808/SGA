@@ -109,7 +109,7 @@ Ext.define('SGA.view.Home2', {
                     {
                         docked: 'top',
                         xtype: 'titlebar',
-                        title: 'SGA Election',
+                        title: 'SGA Elections',
                         items: [
                             {
                         xtype: 'button',
@@ -130,7 +130,7 @@ Ext.define('SGA.view.Home2', {
                 styleHtmlContent: true,
                 scrollable: true,
                 html: [
-                        '<center><img src="resources/images/photos/sgaphoto16.png" /></center>',
+                        '<center><img src="resources/images/office.png" /></center>',
 	    				'<h2>Lincoln Park</h2>',
 	    				"<p>Student Involvement Office, Ste. 201 G<br />",
 	    				"2250 N. Sheffield Avenue<br />",

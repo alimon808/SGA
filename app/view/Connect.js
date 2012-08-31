@@ -7,7 +7,7 @@ Ext.define('SGA.view.Connect', {
     ],
     config: {
         title: 'Officers',
-        iconCls: 'contract',
+        iconCls: 'user3',
         cls: 'sga-list',
         id: 'officersList',
         items: [

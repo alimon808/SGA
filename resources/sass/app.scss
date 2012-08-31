@@ -8,7 +8,7 @@ $list-bg-color: #FFFFFF;
 $list-disclosure-color: #C11110;
 
 $tabs-dark: darken($base-color, 10%);
-$tabs-dark-active-color: #FF9900;
+$tabs-dark-active-color: #FFFFFF;
 
 @import 'sencha-touch/default/all';
 
@@ -30,8 +30,9 @@ $tabs-dark-active-color: #FF9900;
 
 @include pictos-iconmask('calendar2');
 @include pictos-iconmask('contract');
-@include pictos-iconmask('link1');
-@include pictos-iconmask('mail');
+@include pictos-iconmask('globe1');
+@include pictos-iconmask('mail5');
+@include pictos-iconmask('user3');
 
 // Your custom code goes here...
 #officerList {
