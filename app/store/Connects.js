@@ -16,18 +16,18 @@ Ext.define('SGA.store.Connects', {
            //{name: "",title:"",email:"",group:"",groupIndex:'0'},
            
            //Academic Affairs Committee
-           {name: "Brandon Allen",title:"Senator of the School of Music",email:"",group:"Academic Affairs Committee",groupIndex:'0',pic: 'officers/allen.png'},
-           {name: "Casey Clemmons",title:"Vice President",email:"cclemmon@depaul.edu",group:"Academic Affairs Committee",groupIndex:'0',pic: 'cclemmons_40.jpg'},
-           {name: "Don Baca",title:"Senator of the Grad, Law & Adult",email:"donnbaca@yahoo.com",group:"Academic Affairs Committee",groupIndex:'0',pic: 'profile_blank_40.gif'},
-           {name: "Greg Zanotti",title:"Senator of the College of Business",email:"gregzanotti1@gmail.com",group:"Academic Affairs Committee",groupIndex:'0',pic: 'profile_blank_40.gif'},
-           {name: "Joe Cunningham",title:"Senator of Communication",email:"cunningham_joe@sbcglobal.net",group:"Academic Affairs Committee",groupIndex:'0',pic: 'officers/cunningham.png'},
+           {name: "Brandon Allen",title:"Senator of the School of Music",email:"",group:"Academic Affairs Committee",groupIndex:'1',pic: 'officers/allen.png'},
+           {name: "Casey Clemmons",title:"Vice President",email:"cclemmon@depaul.edu",group:"Academic Affairs Committee",groupIndex:'1',pic: 'cclemmons_40.jpg'},
+           {name: "Don Baca",title:"Senator of the Grad, Law & Adult",email:"donnbaca@yahoo.com",group:"Academic Affairs Committee",groupIndex:'1',pic: 'profile_blank_40.gif'},
+           {name: "Greg Zanotti",title:"Senator of the College of Business",email:"gregzanotti1@gmail.com",group:"Academic Affairs Committee",groupIndex:'1',pic: 'profile_blank_40.gif'},
+           {name: "Joe Cunningham",title:"Senator of Communication",email:"cunningham_joe@sbcglobal.net",group:"Academic Affairs Committee",groupIndex:'1',pic: 'officers/cunningham.png'},
            //add the rest here
            
            //Administrators
-           {name: "Caroline Winsett",title:"President",email:"cwinsett@depaul.edu",group:"Administrators",groupIndex:'1',pic: 'officers/winsett.png'},
-           {name: "Casey Clemmons",title:"Vice President",email:"cclemmon@depaul.edu",group:"Administrators",groupIndex:'1',pic: 'cclemmons_40.jpg'},
-           {name: "Sophia Lammers",title:"Public Relations Coordinator",email:"sophia.a.lammers@gmail.com",group:"Administrators",groupIndex:'1',pic: 'officers/lammers.png'},
-           {name: "Tyneka Harris",title:"",email:"tharris6@depaul.edu",group:"Administrators",groupIndex:'1',pic: 'officers/harris.png'},
+           {name: "Caroline Winsett",title:"President",email:"cwinsett@depaul.edu",group:"Administrators",groupIndex:'0',pic: 'officers/winsett.png'},
+           {name: "Casey Clemmons",title:"Vice President",email:"cclemmon@depaul.edu",group:"Administrators",groupIndex:'0',pic: 'cclemmons_40.jpg'},
+           {name: "Sophia Lammers",title:"Public Relations Coordinator",email:"sophia.a.lammers@gmail.com",group:"Administrators",groupIndex:'0',pic: 'officers/lammers.png'},
+           {name: "Tyneka Harris",title:"",email:"tharris6@depaul.edu",group:"Administrators",groupIndex:'0',pic: 'officers/harris.png'},
            //add more administors
            
            //Officers

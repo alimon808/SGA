@@ -28,8 +28,6 @@ Ext.define('SGA.view.ContactForm',{
             },
             {
                 xtype: 'fieldset',
-                //title: 'Contact Us',
-                //instructions: '(email is not required)',
                 items: [
                     {
                             xtype: 'textfield',

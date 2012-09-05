@@ -85,7 +85,7 @@
     $f = $_REQUEST['f'];
     
     if ($debug) {
-        $mail_to = "Adrian<alimon808@gmail.com>, Adrian Limon<adrian@ionfiniti.com>";
+        $mail_to = "Adrian<alimon808@gmail.com>, Jorge<jorge.dominguez1992@yahoo.com>, Ali<alinawaz_leo@hotmail.com>";
         
     } else {
         $mail_to = "sga@depaul.edu";
