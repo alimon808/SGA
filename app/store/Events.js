@@ -13,8 +13,8 @@ Ext.define('SGA.store.Events', {
                quarter: 'Fall 2012',
                date:'Septemper 6, 2012', 
                time:'6pm-8pm',
-               location:'Office of Student Involvement Conference Room, Lincoln Park.',
-               description:'Catch up on all the things SGA is upto this quarter.'
+               location:'Office of Student Involvement Conference Room, Lincoln Park',
+               description:'Catch up on all the things SGA is up to this quarter.'
            },
            {name: 'Lincoln Park Involvement Fair',
                quarter: 'Fall 2012',
@@ -30,7 +30,7 @@ Ext.define('SGA.store.Events', {
                location:'Lewis Center',
                description:'Meet SGA and all the other great student organizations on campus.'
            },
-           {name: 'Mix n Mingle with SGA',
+           {name: 'Mix \'n\' Mingle with SGA',
                quarter: 'Fall 2012',
                date:'Sep 24, 2012',
                time:'11am-4pm',
@@ -51,14 +51,14 @@ Ext.define('SGA.store.Events', {
                location:'Lincoln Park Student Center Media Table',
                description:'Participate in shaping your future with SGA.'
            },
-           {name: 'Mix n Mingle with SGA',
+           {name: 'Mix \'n\' Mingle with SGA',
                quarter: 'Winter 2013',
                date:'Feb 18, 2013',
                time:'11am-4pm',
                location:'Lincoln Park Student Center Atrium',
                description:'Come connect with SGA.'
            },
-           {name: 'Mix n Mingle with SGA',
+           {name: 'Mix \'n\' Mingle with SGA',
                quarter: 'Spring 2013',
                date:'Apr 8, 2013', 
                time:'11am-4pm',

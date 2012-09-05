@@ -64,7 +64,7 @@ Ext.define('SGA.view.Home2', {
                         xtype: 'button',
                         text: 'Back',
                         handler: function(){
-                            Ext.getCmp('home2id').setActiveItem(0, {type: 'slide', direction: 'right',duration: '3000' });
+                            Ext.getCmp('home2id').setActiveItem(0, {type: 'slide', direction: 'right', duration: '3000' });
                         }
                             }
                         ]
@@ -84,7 +84,7 @@ Ext.define('SGA.view.Home2', {
                         xtype: 'button',
                         text: 'Back',
                         handler: function(){
-                            Ext.getCmp('home2id').setActiveItem(0, {type: 'slide', direction: 'right',duration: '3000' });
+                            Ext.getCmp('home2id').setActiveItem(0, {type: 'slide', direction: 'right', duration: '3000' });
                         }
                             }
                         ]
@@ -115,7 +115,7 @@ Ext.define('SGA.view.Home2', {
                         xtype: 'button',
                         text: 'Back',
                         handler: function(){
-                            Ext.getCmp('home2id').setActiveItem(0, {type: 'slide', direction: 'right',duration: '3000' });
+                            Ext.getCmp('home2id').setActiveItem(0, {type: 'slide', direction: 'right', duration: '3000' });
                         }
                             }
                         ]
@@ -152,7 +152,7 @@ Ext.define('SGA.view.Home2', {
                         xtype: 'button',
                         text: 'Back',
                         handler: function(){
-                            Ext.getCmp('home2id').setActiveItem(0, {type: 'slide', direction: 'right',duration: '3000' });
+                            Ext.getCmp('home2id').setActiveItem(0, {type: 'slide', direction: 'right', duration: '3000' });
                         }
                             }
                         ]
@@ -175,7 +175,7 @@ Ext.define('SGA.view.Home2', {
                                 xtype: 'button',
                                 text: 'Back',
                                 handler: function(){
-                                    Ext.getCmp('home2id').setActiveItem(0, {type: 'slide', direction: 'right',duration: '3000' });
+                                    Ext.getCmp('home2id').setActiveItem(0, {type: 'slide', direction: 'right', duration: '3000' });
                                 }
                             }
                         ]

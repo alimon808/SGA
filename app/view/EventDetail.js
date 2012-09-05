@@ -22,7 +22,7 @@ Ext.define('SGA.view.EventDetail', {
                     xtype: 'button',
                     text: 'Back',
                     handler: function(){
-                        Ext.getCmp('eventcard').setActiveItem(0, {type: 'slide', direction: 'right',duration: '3000' });
+                        Ext.getCmp('eventcard').setActiveItem(0, {type: 'slide', direction: 'right', duration: '3000'});
                     }
                   }
                   /*

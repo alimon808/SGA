@@ -37,6 +37,58 @@ Ext.define('SGA.view.EventList', {
                 }//listeners
             },
             {
+                title: 'Past Events',
+                xtype: 'carousel',
+                cls: 'middle',
+
+                defaults: {
+                    styleHtmlContent: true,
+                },
+
+                items: [
+                    {
+                        html : '<img src="resources/images/photos/sgaphoto3.png" />'
+                    },
+                    {
+                        html : '<img src="resources/images/photos/sgaphoto4.png" />'
+                    },
+                    {
+                        html : '<img src="resources/images/photos/sgaphoto5.png" />'
+                    },
+                    {
+                        html : '<img src="resources/images/photos/sgaphoto6.png" />'
+                    },
+                    {
+                        html : '<img src="resources/images/photos/sgaphoto7.png" />'
+                    },
+                    {
+                        html : '<img src="resources/images/photos/sgaphoto8.png" />'
+                    },
+                    {
+                        html : '<img src="resources/images/photos/sgaphoto9.png" />'
+                    },
+                    {
+                        html : '<img src="resources/images/photos/sgaphoto10.png" />'
+                    },
+                    {
+                        html : '<img src="resources/images/photos/sgaphoto11.png" />'
+                    },
+                    {
+                        html : '<img src="resources/images/photos/sgaphoto12.png" />'
+                    },
+                    {
+                        html : '<img src="resources/images/photos/sgaphoto13.png" />'
+                    },
+                    {
+                        html : '<img src="resources/images/photos/sgaphoto14.png" />'
+                    },
+                    {
+                        html : '<img src="resources/images/photos/sgaphoto15.png" />'
+                    }
+                ]
+            }
+            /*
+            {
                 xtype: 'list',
                 ui: 'round',
                 itemTpl: '<div class="list-item-title">{name}</div>'+
@@ -51,6 +103,7 @@ Ext.define('SGA.view.EventList', {
                         }
                     }//listeners
             }
+            */
         ]
     }
 });
