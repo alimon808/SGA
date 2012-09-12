@@ -130,14 +130,15 @@ Ext.define('SGA.view.Home2', {
                 styleHtmlContent: true,
                 scrollable: true,
                 html: [
-                        '<center><img src="resources/images/office.png" /></center>',
+                        '<center><img src="resources/images/office2.png" /></center>',
 	    				'<h2>Lincoln Park</h2>',
 	    				"<p>Student Involvement Office, Ste. 201 G<br />",
 	    				"2250 N. Sheffield Avenue<br />",
 	    				"Chicago, IL 60614<br />",
 	    				"773-325-7350</p>",
 
-	    				'<h2>Loop</h2>',
+	    				'<center><img src="resources/images/office.png" /></center>',
+                        '<h2>Loop</h2>',
 	    				"<p>DePaul Center, Rm. 110002<br />",
 	    				"1 E. Jackson Blvd<br />",
 	    				"Chicago, IL 60604<p>"
